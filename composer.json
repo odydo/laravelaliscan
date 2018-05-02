@@ -1,0 +1,27 @@
+{
+    "name": "odydo/laravelaliscan",
+    "description": "....",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tim",
+            "email": "job@liuhailong.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Odydo\\Laravelaliscan\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Odydo\\Laravelaliscan\\LaravelaliscanServiceProvider"
+            ]
+        }
+    }
+}
