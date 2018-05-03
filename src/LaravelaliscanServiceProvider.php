@@ -38,10 +38,10 @@ class LaravelaliscanServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../config/aliscan.php', 'aliscan'
         );
-        $this->app->singleton('aliScanClient', function ($app) {
+        $this->app->singleton('aliScan', function ($app) {
             //return (new Laravelaliscan())->getClient();
-            //return new Laravelaliscan('wwww');
-            include __DIR__ . '/../aliscan.php';
+            return new Laravelaliscan();
+            //include __DIR__ . '/../aliscan.php';
             return $client;
         });
     }
