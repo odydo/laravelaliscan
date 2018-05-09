@@ -42,7 +42,7 @@ class LaravelaliscanServiceProvider extends ServiceProvider
             //return (new Laravelaliscan())->getClient();
             return new Laravelaliscan();
             //include __DIR__ . '/../aliscan.php';
-            return $client;
+            //return $client;
         });
     }
 }
